@@ -20,20 +20,20 @@ mcp = Adafruit_MCP3008.MCP3008(clk=CLK, cs=CS, miso=MISO, mosi=MOSI)
 # SPI_PORT   = 0
 # SPI_DEVICE = 0 # mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 
+# A helpe function to get the current time in a string format
 def Now():
     return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-#datafile = open("output.csv", "a") 
-
 # Main program loop.
 while True:
-    solar_value = mcp.read_adc(0)
     # Read the ADC channel 0 values 
-    #    datafile.write(Now() + ',' +str(solar_value) + '\n')
+    solar_value = mcp.read_adc(0)
+
+    # Print the current time and the value read on a line
     print(Now() + ',' +str(solar_value))
+
     # Pause for second.
     time.sleep(1.0)
 
-#datafile.close()
 
 

@@ -1,5 +1,7 @@
 data-to-upload/data/*
 output.csv
+email_body.txt
+output.png
 username
-logs/*.log
+logs/*.log*
 

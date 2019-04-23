@@ -10,4 +10,10 @@
   dateext
 }
 
-
+/home/pi/srp/piday/logs/*.log {
+  rotate 365
+  weekly 
+  missingok
+  notifempty
+  dateext
+}

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+[Desktop Entry]
+Exec= lxterminal -e "/home/pi/srp/piday/etc/start.sh" 
+Type=Application;
+
+

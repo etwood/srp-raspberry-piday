@@ -4,10 +4,16 @@
 # License: Public Domain
 import time
 import datetime
+import subprocess
 
 # Import SPI library (for hardware SPI) and MCP3008 library.
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_MCP3008
+
+# Exit if this is a remote session
+# if subprocess.check_output(["tty"]) != "/dev/pts/0\n":
+#     print("Exiting since this is a remote session")
+#     quit()
 
 # Software SPI configuration:
 CLK  = 18
@@ -27,7 +33,7 @@ def Now():
 # Main program loop.
 while True:
     # Read the ADC channel 0 values 
-    solar_value = mcp.read_adc(0)
+    solar_value = mcp.read_adc(1)
 
     # Print the current time and the value read on a line
     print(Now() + ',' +str(solar_value))

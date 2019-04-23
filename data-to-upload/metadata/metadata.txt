@@ -1,8 +1,20 @@
-Metadata!
+Data about your Data: Metadata!
+help us understand a little more about the data your generating! 
 
 
-Where is your solar cell installed? (location, orientation, etc) 
+Whats a good email address for you? (contact info):
+eric.wood@srpnet.com
 
-Are there any trees that shade it?
+Where is your solar cell installed? (location, orientation, etc): 
+On my roof ;-) 33.3949327,-111.7464492, orientation is true south at a 33 degree angle off horizontal
 
+Does it ever get any shade?
+There should be no shade
 
+If you want to add some photos, just copy them into this directory!
+
+NOTES:
+Reduced resistor to 25-ohms on 4/3/2019
+Increase resistance to ~33-ohms (3 100-ohm in parallel) on 4/4/2019
+Increased resistance to 39-ohms
+Decreased to 33-ohms (single resistor) @ 5am on 4/18/2019

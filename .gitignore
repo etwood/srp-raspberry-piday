@@ -1,2 +1,5 @@
 data-to-upload/data/*
 output.csv
+username
+logs/*.log
+

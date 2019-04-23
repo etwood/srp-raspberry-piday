@@ -1,0 +1,21 @@
+# m h  dom mon dow   command
+# * * * * *  command to execute
+# ┬ ┬ ┬ ┬ ┬
+# │ │ │ │ │
+# │ │ │ │ │
+# │ │ │ │ └───── day of week (0 - 7) (0 to 6 are Sunday to Saturday, or use names; 7 is Sunday, the same as 0)
+# │ │ │ └────────── month (1 - 12)
+# │ │ └─────────────── day of month (1 - 31)
+# │ └──────────────────── hour (0 - 23)
+# └───────────────────────── min (0 - 59)
+
+# 10:00 pm send out daily email
+00 22 * * * /home/pi/srp/piday/etc/email_daily_graph.sh
+
+# 3:14 and 4:30 am -> upload data 
+14 3 * * * /home/pi/srp/piday/etc/upload.sh >>  /home/pi/srp/piday/logs/upload.log
+30 4 * * * /home/pi/srp/piday/etc/upload.sh >>  /home/pi/srp/piday/logs/upload.log
+
+# 3:45 am update yourself
+# 45 3 * * * /home/pi/srp/piday/etc/update-piday.sh >>  /home/pi/srp/piday/logs/self-update.log
+

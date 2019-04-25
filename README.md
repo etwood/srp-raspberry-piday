@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Raspberry Pi Day 
 
 to run:
@@ -27,7 +26,3 @@ Your data will get written to /home/pi/srp/piday/output.csv and then once a day 
 
 
 inspired by: https://medium.com/@jdc_cunningham/how-to-connect-a-solar-panel-to-a-raspberry-pi-3fc15b7943ba
-
-
->>>>>>> 7123c837ab1644133bbc039c7bbe4e8223f217c0
-

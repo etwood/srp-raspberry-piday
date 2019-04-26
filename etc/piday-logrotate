@@ -16,4 +16,5 @@
   missingok
   notifempty
   dateext
+  olddir /home/pi/srp/piday/data-to-upload/raspberry-pi/
 }

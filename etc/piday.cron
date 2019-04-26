@@ -17,5 +17,8 @@
 30 4 * * * /home/pi/srp/piday/etc/upload.sh >>  /home/pi/srp/piday/logs/upload.log
 
 # 3:45 am update yourself
-# 45 3 * * * /home/pi/srp/piday/etc/update-piday.sh >>  /home/pi/srp/piday/logs/self-update.log
+# 45 3 * * * /home/pi/srp/piday/etc/update-piday.sh >>  /home/pi/srp/piday/logs/self-update.log 2>&1
+
+# Capture some info about the pi every 5 minutes
+*/5 * * * * /home/pi/srp/piday/etc/raspberrypi-stats.sh >>  /home/pi/srp/piday/logs/raspberrypi-info.log 2>&1
 

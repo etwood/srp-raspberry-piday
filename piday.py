@@ -33,7 +33,7 @@ def Now():
 # Main program loop.
 while True:
     # Read the ADC channel 0 values 
-    solar_value = mcp.read_adc(1)
+    solar_value = mcp.read_adc(0)
 
     # Print the current time and the value read on a line
     print(Now() + ',' +str(solar_value))

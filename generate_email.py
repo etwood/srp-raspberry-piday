@@ -7,7 +7,7 @@ import datetime
 
 # Voltage on MCP3008 measured @ 4.59V
 def volts_from_reading(row):
-    return row['Reading'] * 4.59 / 1024
+    return row['Reading'] * 5.18 / 1024
 
 currentDT = datetime.datetime.now()
 print('Graph generated')

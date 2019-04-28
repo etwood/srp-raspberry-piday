@@ -18,3 +18,4 @@ Reduced resistor to 25-ohms on 4/3/2019
 Increase resistance to ~33-ohms (3 100-ohm in parallel) on 4/4/2019
 Increased resistance to 39-ohms
 Decreased to 33-ohms (single resistor) @ 5am on 4/18/2019
+Replaced A2D convertor that was damamged during assembly, back to port-0 4/28/2019

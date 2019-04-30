@@ -6,7 +6,7 @@
   sharedscripts
   copytruncate
   nocompress
-  olddir /home/pi/srp/piday/data-to-upload/data/
+  olddir /home/pi/srp/piday/data-to-upload/data
   dateext
 }
 
@@ -16,5 +16,5 @@
   missingok
   notifempty
   dateext
-  olddir /home/pi/srp/piday/data-to-upload/raspberry-pi/
+  olddir /home/pi/srp/piday/data-to-upload/raspberry-pi
 }

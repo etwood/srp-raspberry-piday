@@ -9,6 +9,9 @@
 # │ └──────────────────── hour (0 - 23)
 # └───────────────────────── min (0 - 59)
 
+# 2:25 send out daily email
+25 2 * * * /home/pi/srp/piday/etc/email_daily_graph.sh
+
 # 3:14 and 4:30 am -> upload data 
 14 3 * * * /home/pi/srp/piday/etc/upload.sh >>  /home/pi/srp/piday/logs/upload.log
 30 4 * * * /home/pi/srp/piday/etc/upload.sh >>  /home/pi/srp/piday/logs/upload.log

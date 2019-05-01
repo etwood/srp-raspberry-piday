@@ -9,4 +9,6 @@ git pull origin master
 # update cron tab
 crontab $DIR/piday.cron
 
+mkdir -p /home/pi/logrotate/
+
 

@@ -9,9 +9,6 @@
 # │ └──────────────────── hour (0 - 23)
 # └───────────────────────── min (0 - 59)
 
-# 10:00 pm send out daily email
-00 22 * * * /home/pi/srp/piday/etc/email_daily_graph.sh
-
 # 3:14 and 4:30 am -> upload data 
 14 3 * * * /home/pi/srp/piday/etc/upload.sh >>  /home/pi/srp/piday/logs/upload.log
 30 4 * * * /home/pi/srp/piday/etc/upload.sh >>  /home/pi/srp/piday/logs/upload.log
@@ -19,6 +16,8 @@
 # 3:45 am update yourself
 # 45 3 * * * /home/pi/srp/piday/etc/update-piday.sh >>  /home/pi/srp/piday/logs/self-update.log 2>&1
 
-# Capture some info about the pi every 5 minutes
-*/5 * * * * /home/pi/srp/piday/etc/raspberrypi-stats.sh >>  /home/pi/srp/piday/logs/raspberrypi-info.log 2>&1
+# Capture some info about the pi every 15 minutes
+*/15 * * * * /home/pi/srp/piday/etc/raspberrypi-stats.sh >>  /home/pi/srp/piday/logs/raspberrypi-info.log 2>&1
+
+30 2 * * * /usr/sbin/logrotate -s /home/pi/logrotate/status /home/pi/srp/piday/etc/piday-logrotate >> /home/pi/srp/piday/logs/logrotate.log 2>&1
 
